@@ -11,6 +11,10 @@ elif condicao == x:
 else:
     print()
 
+os.system('cls')
+apprend() v= adiciona
+try  except
+
 
 sites usados:
 https://fsymbols.com/pt/letras/
