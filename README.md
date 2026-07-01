@@ -90,7 +90,7 @@ Este projeto fez parte dos meus estudos na **Alura**, com foco em consolidar fun
 
 **Guilherme Lima**
 
-<img src="https://github.com/uranolais.png" width="150" alt="Foto de perfil">
+<img src="https://media.licdn.com/dms/image/v2/D4E03AQFodSTnO1qe9w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727180159904?e=1784764800&v=beta&t=r83QSJOEmBXirzSl8Ta2Jjw_9f_yPYTL8kmpj0xfiwE" width="150" alt="Foto de perfil">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-lima-developer/)
 
