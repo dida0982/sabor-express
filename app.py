@@ -1,6 +1,11 @@
 import os
+from sre_parse import CATEGORIES
 
-restaurants = ['Pizza', 'Frango']
+restaurants = [
+    {'nome':'Sushi do Gui', 'categoria': 'Japonesa', 'ativo':False},
+    {'nome':'Pizza Intergaláctica', 'categoria': 'Italica', 'ativo':True},
+    {'nome':'Crepe Wars', 'categoria': 'Italiana', 'ativo':False},
+]
 
 def exibir_nome_do_program():
     print("""
@@ -43,9 +48,13 @@ def cadastrar_novo_restaurante():
 
 def lista_de_restaurantes():
     exibir_subtitulo('Listando Restaurantes')
+
     for restaurante in restaurants:
-        print(f'.{restaurante}')
-    input('Digite uma tecla para voltar ao menu principal')
+        nome_restaurante = restaurante['nome']
+        categoria = restaurante['categoria']
+        ativo = restaurante['ativo']
+        print(f'- {nome_restaurante} | {categoria} | {ativo}')
+
     voltar_ao_menu_principal()
 
 def escolher_opcao():
