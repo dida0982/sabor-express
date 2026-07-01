@@ -90,13 +90,13 @@ Este projeto fez parte dos meus estudos na **Alura**, com foco em consolidar fun
 
 **Guilherme Lima**
 
-<img src="https://github.com/uranolais" width="150" alt="Foto de perfil">
+<img src="https://github.com/uranolais.png" width="150" alt="Foto de perfil">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-lima-developer/)
 
 **Laís Urano**
 
-<img src="https://github.com/uranolais" width="150" alt="Foto de perfil">
+<img src="https://github.com/uranolais.png" width="150" alt="Foto de perfil">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/la%C3%ADs-urano-9a41451b3/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uranolais)
