@@ -13,6 +13,9 @@
 
 ---
 
+<img width="789" height="958" alt="Screenshot 2026-06-30 212740" src="https://github.com/user-attachments/assets/87e6f598-936c-441d-a8a2-1b71b048c988" />
+
+
 ## 📋 Sobre o projeto
 
 Este repositório documenta minha jornada de estudos em Python, com foco em lógica de programação. Ele é dividido em duas partes:
@@ -83,9 +86,27 @@ python exercicios1.py
 
 Este projeto fez parte dos meus estudos na **Alura**, com foco em consolidar fundamentos de lógica de programação em Python: manipulação de strings, estruturas de decisão, laços de repetição, listas e tratamento de exceções — aplicados tanto em exercícios isolados quanto em um projeto prático de CLI.
 
+**Instrutores:**
+
+**Guilherme Lima**
+
+<img src="https://github.com/uranolais" width="150" alt="Foto de perfil">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-lima-developer/)
+
+**Laís Urano**
+
+<img src="https://github.com/uranolais" width="150" alt="Foto de perfil">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/la%C3%ADs-urano-9a41451b3/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uranolais)
+
 ## 👤 Autor
 
 **Guilherme Barros**
+
+<img src="https://github.com/dida0982.png" width="150" alt="Foto de perfil">
+
 Desenvolvedor Front-end | Brasília, DF - Brasil
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-barros-6a0369209/)
