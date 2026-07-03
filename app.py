@@ -1,35 +1,34 @@
 import os
-from sre_parse import CATEGORIES
 
-restaurantes = [
-    {'nome':'Sushi', 'categoria': 'Japonesa', 'ativo':False},
-    {'nome':'Pizza', 'categoria': 'Italica', 'ativo':True},
-    {'nome':'Crepe', 'categoria': 'Italiana', 'ativo':False},
-]
+restaurantes = [{'nome':'Praça', 'categoria':'Japonesa', 'ativo':False},
+                {'nome':'Pizza Suprema', 'categoria':'Pizza', 'ativo':True},
+                {'nome':'Cantina', 'categoria':'Italiano', 'ativo':False}]
 
-def exibir_nome_do_program():
+def exibir_nome_do_programa():
     print("""
-░██████╗░█████╗░██████╗░░█████╗░██████╗░░░░░░░███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
-██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗░░░░░░██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
-╚█████╗░███████║██████╦╝██║░░██║██████╔╝█████╗█████╗░░░╚███╔╝░██████╔╝██████╔╝█████╗░░╚█████╗░╚█████╗░
-░╚═══██╗██╔══██║██╔══██╗██║░░██║██╔══██╗╚════╝██╔══╝░░░██╔██╗░██╔═══╝░██╔══██╗██╔══╝░░░╚═══██╗░╚═══██╗
-██████╔╝██║░░██║██████╦╝╚█████╔╝██║░░██║░░░░░░███████╗██╔╝╚██╗██║░░░░░██║░░██║███████╗██████╔╝██████╔╝
-╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝░░░░░░╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░\n""")
+░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
+██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
+╚█████╗░███████║██████╦╝██║░░██║██████╔╝  █████╗░░░╚███╔╝░██████╔╝██████╔╝█████╗░░╚█████╗░╚█████╗░
+░╚═══██╗██╔══██║██╔══██╗██║░░██║██╔══██╗  ██╔══╝░░░██╔██╗░██╔═══╝░██╔══██╗██╔══╝░░░╚═══██╗░╚═══██╗
+██████╔╝██║░░██║██████╦╝╚█████╔╝██║░░██║  ███████╗██╔╝╚██╗██║░░░░░██║░░██║███████╗██████╔╝██████╔╝
+╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░
+""")
+
 def exibir_opcoes():
-    print('1. Cadastrar Restaurante')
-    print('2. Listar Restaurante')
-    print('3. Alternator estado do Restaurante')
+    print('1. Cadastrar restaurante')
+    print('2. Listar restaurantes')
+    print('3. Alternar estado do restaurante')
     print('4. Sair\n')
 
 def finalizar_app():
     exibir_subtitulo('Finalizar app')
 
 def voltar_ao_menu_principal():
-    input('Digite uma tecla para voltar ao menu principal: ')
+    input('\nDigite uma tecla para voltar ao menu ')
     main()
 
 def opcao_invalida():
-    print('Opção invalida.\n')
+    print('Opção inválida!\n')
     voltar_ao_menu_principal()
 
 def exibir_subtitulo(texto):
@@ -42,19 +41,18 @@ def exibir_subtitulo(texto):
 
 def cadastrar_novo_restaurante():
     exibir_subtitulo('Cadastro de novos restaurantes')
-    print('Cadastro de novos restaurantes\n ')
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
-    categoria = input(f'Digite o nome da categoria do restaurante {nome_do_restaurante}:')
-    dados_do_restaurrante = {'nome':nome_do_restaurante, 'categoria':categoria, 'ativo': False}
-    restaurantes.append(dados_do_restaurrante)
-    print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!\n')
-    input('Digite uma tecla para voltar ao menu principal')
+    categoria = input(f'Digite o nome da categoria do restaurante {nome_do_restaurante}: ')
+    dados_do_restaurante = {'nome':nome_do_restaurante, 'categoria':categoria, 'ativo':False}
+    restaurantes.append(dados_do_restaurante)
+    print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!')
+
     voltar_ao_menu_principal()
 
-def lista_de_restaurantes():
-    exibir_subtitulo('Listando Restaurantes')
+def listar_restaurantes():
+    exibir_subtitulo('Listando restaurantes')
 
-    print(f'{'Nome do restaurante' .ljust(22)} | {'Categori'.ljust(20)} | Status')
+    print(f"{'Nome do restaurante'.ljust(22)} | {'Categoria'.ljust(20)} | Status")
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria = restaurante['categoria']
@@ -63,8 +61,8 @@ def lista_de_restaurantes():
 
     voltar_ao_menu_principal()
 
-def alternar_estado_do_restaurante():
-    exibir_subtitulo('Alternando estado do restaurante')
+def alternar_estado_restaurante():
+    exibir_subtitulo('ALterando estado do restaurante')
     nome_restaurante = input('Digite o nome do restaurante que deseja alterar o estado: ')
     restaurante_encontrado = False
 
@@ -76,20 +74,21 @@ def alternar_estado_do_restaurante():
             print(mensagem)
 
     if not restaurante_encontrado:
-        print('Restaurante não encontrado ')
+        print('O restaurante não foi encontrado')
 
     voltar_ao_menu_principal()
 
 def escolher_opcao():
     try:
         opcao_escolhida = int(input('Escolha uma opção: '))
+        # opcao_escolhida = int(opcao_escolhida)
 
         if opcao_escolhida == 1:
             cadastrar_novo_restaurante()
         elif opcao_escolhida == 2:
-            lista_de_restaurantes()
+            listar_restaurantes()
         elif opcao_escolhida == 3:
-            alternar_estado_do_restaurante()
+            alternar_estado_restaurante()
         elif opcao_escolhida == 4:
             finalizar_app()
         else:
@@ -98,8 +97,8 @@ def escolher_opcao():
         opcao_invalida()
 
 def main():
-    os.system(('cls'))
-    exibir_nome_do_program()
+    os.system('cls')
+    exibir_nome_do_programa()
     exibir_opcoes()
     escolher_opcao()
 
