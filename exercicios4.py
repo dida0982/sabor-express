@@ -19,3 +19,8 @@ Remova um item do dicionário.
 1 - Crie um dicionário representando informações sobre uma pessoa, como nome, idade e cidade.
 '''
 
+informacoes_sobre_uma_pessoa = [
+    {'nome' : 'Guilherme', 'idade' : 28, 'cidade' : 'Brasília'},
+    {'nome' : 'Mariane', 'idade' : 34, 'cidade' : 'Minas Gerais'},
+    {'nome' : 'Andrea', 'idade' : 50, 'cidade' : 'Rio de Janeiro'}
+]
